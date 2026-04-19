@@ -1,0 +1,20 @@
+{
+  "store_id": "STORE_001",
+  "store_name": "Apex Retail - Purple Store",
+  "open_hours": { "start": "09:00", "end": "21:00" },
+  "timezone": "Asia/Kolkata",
+  "cameras": [
+    { "camera_id": "CAM_1", "file": "Footage/CAM 1.mp4", "role": "ENTRY",    "zone_id": "ENTRY_ZONE"  },
+    { "camera_id": "CAM_2", "file": "Footage/CAM 2.mp4", "role": "FLOOR",    "zone_id": "MAIN_FLOOR"  },
+    { "camera_id": "CAM_3", "file": "Footage/CAM 3.mp4", "role": "BILLING",  "zone_id": "BILLING"     },
+    { "camera_id": "CAM_4", "file": "Footage/CAM 4.mp4", "role": "FLOOR_2",  "zone_id": "FLOOR_SOUTH" },
+    { "camera_id": "CAM_5", "file": "Footage/CAM 5.mp4", "role": "ENTRY_2",  "zone_id": "ENTRY_SOUTH" }
+  ],
+  "zones": [
+    { "zone_id": "ENTRY_ZONE",  "camera_id": "CAM_1", "type": "threshold", "label": "Main Entry"    },
+    { "zone_id": "MAIN_FLOOR",  "camera_id": "CAM_2", "type": "zone",      "label": "Main Floor"    },
+    { "zone_id": "BILLING",     "camera_id": "CAM_3", "type": "billing",   "label": "Billing Area"  },
+    { "zone_id": "FLOOR_SOUTH", "camera_id": "CAM_4", "type": "zone",      "label": "South Floor"   },
+    { "zone_id": "ENTRY_SOUTH", "camera_id": "CAM_5", "type": "threshold", "label": "South Entry"   }
+  ]
+}

@@ -1,0 +1,62 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.installed.cfg
+*.egg
+build/
+dist/
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- Test / coverage artifacts ---
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+.tox/
+coverage.xml
+*.cover
+
+# --- IDE / editor ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- Project: secrets ---
+.env
+.env.*
+!.env.example
+
+# --- Project: runtime artifacts ---
+data/*.db
+data/*.db-journal
+data/*.db-wal
+data/*.db-shm
+output/*.jsonl
+output/all_events.jsonl
+pipeline.log
+*.log
+
+# --- Project: model weights (auto-downloaded by ultralytics) ---
+*.pt
+yolov8*.pt
+
+# --- Project: Footage clips ---
+# CAM 1/2/3.mp4 are >100 MB and would be rejected by GitHub.
+# Recipient is expected to drop the 5 .mp4 files into Footage/ themselves.
+# Use Git LFS instead if you need to version them.
+Footage/*.mp4
+CLAUDE_CODE_IMPLEMENTATION_PLAN_V2.md

@@ -1,0 +1,39 @@
+.git
+.gitignore
+.venv
+venv
+__pycache__
+**/__pycache__
+*.pyc
+*.pyo
+.pytest_cache
+.mypy_cache
+.coverage
+htmlcov/
+.DS_Store
+
+# Large / forbidden content — never bake into the image
+Footage/
+*.mp4
+*.mkv
+*.avi
+*.mov
+
+# Runtime state (mounted via volumes instead)
+data/
+output/
+pipeline.log
+*.db
+*.db-journal
+
+# Local-only files
+.env
+.env.local
+
+# Not needed at runtime
+tests/
+docs/
+dashboard/
+*.md
+CLAUDE_CODE_IMPLEMENTATION_PLAN_V2.md
+Makefile
