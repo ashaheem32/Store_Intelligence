@@ -5,7 +5,7 @@ Real-time retail analytics from CCTV footage. A FastAPI service ingests visitor-
 ## Setup (5 commands)
 
 ```bash
-git clone <your-repo-url>
+git clone <https://github.com/ashaheem32/Store_Intelligence.git>
 cd Purple
 cp .env.example .env
 docker compose up -d
